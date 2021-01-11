@@ -1,0 +1,18 @@
+id						INT, PRIMARY KEY, AUTO_INCREMENT, NOT NULL, UNIQUE, INDEX
+casa_produttrice        VARCHAR(20), NOT NULL
+modello	 				VARCHAR(15), NOT NULL
+anno					YEAR, NOT NULL
+targa					CHAR(7), NOT NULL, UNIQUE, INDEX
+categoria				VARCHAR(25), NULL
+carburante				VARCHAR(15), NOT NULL
+stato_veicolo			VARCHAR(10), NULL 
+km						MEDIUMINT, NOT NULL
+cambio					VARCHAR(15), NOT NULL
+posti					TINYINT, NULL, DEFAULT ("5")
+colore					VARCHAR(25), NULL
+classe_emissioni		CHAR(1), NULL
+prezzo_acquisto			DECIMAL(10,2), NOT NULL
+prezzo_vendita			DECIMAL(10,2), NOT NULL
+disponibilita			CHAR(1), NOT NULL, DEFAULT ("1")
+note					TEXT(500), NULL
+
